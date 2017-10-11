@@ -1,0 +1,1 @@
+# lightscript-minimal-node
