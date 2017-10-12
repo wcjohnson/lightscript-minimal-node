@@ -1,0 +1,40 @@
+{
+  "name": "lightscript-minimal-node",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Minimal skeleton for a LightScript library or app running in Node.",
+  "main": "lib/index.cjs.js",
+  "scripts": {
+    "clean": "rimraf lib coverage .nyc_output",
+    "build": "rollup -c",
+    "build:coverage": "rollup -c rollup.config.coverage.js",
+    "test": "npm run lint && npm run clean && npm run build && jest",
+    "coverage": "npm run clean && npm run build:coverage && jest --coverage",
+    "lint": "eslint --ext .js,.lsc src",
+    "preversion": "npm run test"
+  },
+  "devDependencies": {
+    "@oigroup/babel-preset-lightscript": "^3.0.0-beta.1",
+    "@oigroup/lightscript-eslint": "^3.0.0-beta.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "eslint": "^3.0.0",
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "lsc"
+    ],
+    "transform": {
+      "^.+\\.lsc$": "<rootDir>/lightscript.jest.js"
+    },
+    "testRegex": "(\\.|/)test\\.lsc$"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parser": "@oigroup/lightscript-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "extends": "eslint:recommended"
+}

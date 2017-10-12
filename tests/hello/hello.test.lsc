@@ -1,0 +1,4 @@
+import { hello } from 'lightscript-minimal-node'
+
+test! "testing hello()", ->
+  expect(hello!).toBe("hello")
