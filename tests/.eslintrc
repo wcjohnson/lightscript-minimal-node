@@ -4,7 +4,8 @@
     "sourceType": "module"
   },
   "env": {
-    "node": true
+    "node": true,
+    "jest": true
   },
   "extends": "eslint:recommended"
 }
