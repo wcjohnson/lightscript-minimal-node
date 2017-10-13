@@ -4,8 +4,7 @@
       "@oigroup/babel-preset-lightscript",
       {
         "env": {
-          "targets": { "ie": 10 },
-          "modules": false
+          "targets": { "ie": 10 }
         }
       }
     ]

@@ -15,11 +15,11 @@
     "preversion": "npm run test"
   },
   "devDependencies": {
-    "@oigroup/babel-preset-lightscript": "^3.0.0-beta.1",
-    "@oigroup/lightscript-eslint": "^3.0.0-beta.1",
+    "@oigroup/babel-preset-lightscript": "^3.0.0-beta.3",
+    "@oigroup/lightscript-eslint": "^3.0.0-beta.3",
     "babel-cli": "^6.26.0",
     "babel-plugin-istanbul": "^4.1.5",
-    "eslint": "^3.0.0",
+    "eslint": "^4.8.0",
     "jest": "^21.2.1",
     "rimraf": "^2.6.2",
     "rollup": "^0.50.0",
@@ -33,7 +33,7 @@
       "lsc"
     ],
     "transform": {
-      "^.+\\.lsc$": "<rootDir>/lightscript.jest.js"
+      "\\.lsc$": "<rootDir>/lightscript.jest.js"
     },
     "testRegex": "(\\.|/)test\\.lsc$"
   }

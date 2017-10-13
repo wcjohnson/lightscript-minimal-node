@@ -7,6 +7,7 @@ A minimal skeleton for a LightScript application or library running in Node.
 - `rollup`-powered build with `@oigroup/babel-preset-lightscript`
 - Linting with `@oigroup/lightscript-eslint`
 - Testing with Jest; tests can be written in LightScript.
+- Code coverage with source mapping
 - GitHub syntax highlighting in `.gitattributes`
 
 ## Building
