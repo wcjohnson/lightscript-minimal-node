@@ -9,6 +9,7 @@ A minimal skeleton for a LightScript application or library running in Node.
 - Testing with Jest; tests can be written in LightScript.
 - Code coverage with source mapping
 - GitHub syntax highlighting in `.gitattributes`
+- `.editorconfig` for LightScript whitespace mode
 
 # VSCode
 
