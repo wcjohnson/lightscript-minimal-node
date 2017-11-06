@@ -17,8 +17,8 @@
     "preversion": "npm run test"
   },
   "devDependencies": {
-    "@oigroup/babel-preset-lightscript": "^3.0.0-beta.3",
-    "@oigroup/lightscript-eslint": "^3.0.0-beta.3",
+    "@oigroup/babel-preset-lightscript": "^3.0.0",
+    "@oigroup/lightscript-eslint": "^3.0.0",
     "babel-cli": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-plugin-istanbul": "^4.1.5",
