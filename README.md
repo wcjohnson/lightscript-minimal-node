@@ -58,3 +58,7 @@ npm run coverage
 - The rollup build assumes that `src/index.lsc` is your only entry/export point. If you need multiple entry points you will need to edit the `rollup.config.js`.
 
 - The `package.json` is set to `private`; change that if you wish to publish to NPM.
+
+## Compiling with Babel
+
+Use `npm run build:plain` to perform non-bundled builds with Babel instead of Rollup. Please note that code coverage is not supported with plain builds at this time.

@@ -47,7 +47,7 @@ var getPlugins = () => [
 var withFormat = (format) => ({
   input: 'src/index.lsc',
   output: {
-    file: `lib/index.${format}.js`,
+    file: format === "cjs" ? `lib/index.js` : `lib/index.${format}.js`,
     format: format
   },
   sourcemap: 'inline',
