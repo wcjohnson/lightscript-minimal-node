@@ -1,4 +1,4 @@
-import { hello } from 'lightscript-minimal-node'
+import { hello } from '../..'
 
 test! "testing hello()", ->
   expect(hello!).toBe("hello")
