@@ -61,4 +61,6 @@ npm run coverage
 
 ## Compiling with Babel
 
-Use `npm run build:plain` to perform non-bundled builds with Babel instead of Rollup. Please note that code coverage is not supported with plain builds at this time.
+Use `npm run build:plain` to perform non-bundled builds with Babel instead of Rollup. You can also change the standard `build` script to call `build:plain` instead of `build:rollup`.
+
+Please note that code coverage is not supported with plain builds at this time.
