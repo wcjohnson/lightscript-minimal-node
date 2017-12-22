@@ -44,6 +44,10 @@
     "transform": {
       "\\.lsc$": "<rootDir>/lightscript.jest.js"
     },
-    "testRegex": "(\\.|/)test\\.lsc$"
+    "testRegex": "(\\.|/)test\\.lsc$",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ]
   }
 }
