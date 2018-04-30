@@ -2,7 +2,7 @@
   "name": "lightscript-minimal-node",
   "version": "0.0.0",
   "private": true,
-  "license": "MIT",
+  "license": "UNLICENSED",
   "description": "Minimal skeleton for a LightScript library or app running in Node.",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
