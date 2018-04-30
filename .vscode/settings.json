@@ -3,5 +3,6 @@
     "javascript",
     "javascriptreact",
     "lightscript"
-  ]
+  ],
+  "debug.allowBreakpointsEverywhere": true
 }

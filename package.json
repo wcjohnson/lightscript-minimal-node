@@ -16,6 +16,7 @@
     "build:rollup:coverage": "cross-env COVERAGE=true rollup -c",
     "test": "npm run lint && npm run clean && npm run build && jest",
     "test:only": "jest",
+    "test:debug": "node --inspect-brk $(npm bin)/jest -i --env jest-environment-node-debug",
     "coverage": "npm run clean && npm run build:rollup:coverage && jest --coverage",
     "lint": "eslint --ext .js,.lsc src",
     "preversion": "npm run test"
@@ -26,14 +27,15 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-istanbul": "^4.1.5",
-    "cross-env": "^5.0.5",
+    "babel-plugin-istanbul": "^4.1.6",
+    "cross-env": "^5.1.4",
     "eslint": "~4.8.0",
     "jest": "^21.2.1",
+    "jest-environment-node-debug": "^2.0.0",
     "rimraf": "^2.6.2",
-    "rollup": "^0.50.0",
-    "rollup-plugin-babel": "^3.0.2",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0"
   },
   "jest": {
     "moduleFileExtensions": [

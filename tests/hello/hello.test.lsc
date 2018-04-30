@@ -1,4 +1,5 @@
 import { hello } from '../..'
 
 test! "testing hello()", ->
+  debugger
   expect(hello!).toBe("hello")

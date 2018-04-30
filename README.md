@@ -23,6 +23,10 @@ If you do use VSCode, installing the following extensions will greatly improve y
 
 We also include some default workplace settings that will live-lint your code as you type in VSCode.
 
+## Debugging
+
+The VSCode debugger can be used to debug LightScript with source mapping support. We have included a runtime configuration to demonstrate this option. Use `npm run test:debug` from the CLI, then launch the VS Code debugger and attach it to the process.
+
 # Commands
 
 ## Building

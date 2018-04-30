@@ -3,7 +3,7 @@ import resolve from 'rollup-plugin-node-resolve';
 var fs = require('fs');
 var path = require('path');
 
-var srcPath = (path.resolve('./src')).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+var srcPath = (path.resolve('./src')).replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
 var srcPathRegex = new RegExp(srcPath)
 
 // Disable module transform when building for rollup
@@ -48,9 +48,9 @@ var withFormat = (format) => ({
   input: 'src/index.lsc',
   output: {
     file: format === "cjs" ? `lib/index.js` : `lib/index.${format}.js`,
-    format: format
+    format: format,
+    sourcemap: 'inline'
   },
-  sourcemap: 'inline',
   plugins: getPlugins(),
   external: isExternal
 })
