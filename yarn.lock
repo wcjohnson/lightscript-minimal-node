@@ -2,21 +2,21 @@
 # yarn lockfile v1
 
 
-"@oigroup/babel-plugin-lightscript@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@oigroup/babel-plugin-lightscript/-/babel-plugin-lightscript-3.0.0.tgz#87ff21d3cdc85a2a669640b64fa77fbf6f379780"
+"@oigroup/babel-plugin-lightscript@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@oigroup/babel-plugin-lightscript/-/babel-plugin-lightscript-3.1.1.tgz#38e1127c6ff66a7ba7a6692f38e4d96de21497d8"
   dependencies:
-    "@oigroup/babylon-lightscript" "3.0.0"
+    "@oigroup/babylon-lightscript" "3.1.1"
     "@oigroup/lightscript-runtime" "^0.1.1"
     ast-loc-utils "^1.1.0"
     babel-types "^6.26.0"
     find-babel-config "^1.1.0"
 
-"@oigroup/babel-preset-lightscript@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@oigroup/babel-preset-lightscript/-/babel-preset-lightscript-3.0.0.tgz#63565a28727d49d8d5b964ee82ba61f1898f65fb"
+"@oigroup/babel-preset-lightscript@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@oigroup/babel-preset-lightscript/-/babel-preset-lightscript-3.1.1.tgz#df81bddac2b48296b57f2d83c4020cd15929a69c"
   dependencies:
-    "@oigroup/babel-plugin-lightscript" "3.0.0"
+    "@oigroup/babel-plugin-lightscript" "3.1.1"
     babel-plugin-syntax-async-functions "^6.13.0"
     babel-plugin-syntax-trailing-function-commas "^6.22.0"
     babel-plugin-transform-class-properties "^6.24.1"
@@ -27,15 +27,15 @@
     babel-plugin-transform-react-jsx "^6.24.1"
     babel-preset-env "^1.6.0"
 
-"@oigroup/babylon-lightscript@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@oigroup/babylon-lightscript/-/babylon-lightscript-3.0.0.tgz#b52019cdf665e195606f7096ed34930962ab8e4b"
+"@oigroup/babylon-lightscript@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@oigroup/babylon-lightscript/-/babylon-lightscript-3.1.1.tgz#3074a1310e843f9ecd8428ced185b35ebb0e9691"
 
-"@oigroup/lightscript-eslint@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@oigroup/lightscript-eslint/-/lightscript-eslint-3.0.0.tgz#d46d239a4ac1ad791e4f1e81fba5ffa482d91cfd"
+"@oigroup/lightscript-eslint@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@oigroup/lightscript-eslint/-/lightscript-eslint-3.1.1.tgz#572550d910202779fc1100173b12895a4796f371"
   dependencies:
-    "@oigroup/babel-plugin-lightscript" "3.0.0"
+    "@oigroup/babel-plugin-lightscript" "3.1.1"
     babel-code-frame "^6.26.0"
     babel-core "^6.26.0"
     babel-traverse "^6.26.0"
@@ -336,6 +336,30 @@ babel-core@^6.0.0, babel-core@^6.26.0:
     private "^0.1.7"
     slash "^1.0.0"
     source-map "^0.5.6"
+
+babel-core@^6.26.3:
+  version "6.26.3"
+  resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.3.tgz#b2e2f09e342d0f0c88e2f02e067794125e75c207"
+  dependencies:
+    babel-code-frame "^6.26.0"
+    babel-generator "^6.26.0"
+    babel-helpers "^6.24.1"
+    babel-messages "^6.23.0"
+    babel-register "^6.26.0"
+    babel-runtime "^6.26.0"
+    babel-template "^6.26.0"
+    babel-traverse "^6.26.0"
+    babel-types "^6.26.0"
+    babylon "^6.18.0"
+    convert-source-map "^1.5.1"
+    debug "^2.6.9"
+    json5 "^0.5.1"
+    lodash "^4.17.4"
+    minimatch "^3.0.4"
+    path-is-absolute "^1.0.1"
+    private "^0.1.8"
+    slash "^1.0.0"
+    source-map "^0.5.7"
 
 babel-generator@^6.18.0, babel-generator@^6.26.0:
   version "6.26.0"
@@ -1182,6 +1206,10 @@ convert-source-map@^1.4.0, convert-source-map@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.5.0.tgz#9acd70851c6d5dfdd93d9282e5edf94a03ff46b5"
 
+convert-source-map@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.5.1.tgz#b8278097b9bc229365de5c62cf5fcaed8b5599e5"
+
 copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
@@ -1237,7 +1265,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-debug@^2.2.0, debug@^2.3.3, debug@^2.6.8:
+debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   dependencies:
@@ -3132,7 +3160,7 @@ pretty-format@^21.2.1:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
-private@^0.1.6, private@^0.1.7:
+private@^0.1.6, private@^0.1.7, private@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
 
@@ -3605,7 +3633,7 @@ source-map@^0.4.4:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.6:
+source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.1, source-map@~0.5.6:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
