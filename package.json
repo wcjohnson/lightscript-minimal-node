@@ -23,10 +23,11 @@
     "test:debug": "node --inspect-brk $(npm bin)/jest -i --env jest-environment-node-debug",
     "coverage": "run-s clean build:coverage test:only:coverage",
     "lint": "eslint --ext .js,.lsc src",
-    "preversion": "npm run test"
+    "lint:fix": "eslint --fix --ext .js,.lsc src"
   },
   "devDependencies": {
     "@lightscript/babel-preset": "4.0.0-alpha.2",
+    "@lightscript/eslint-plugin": "4.0.0-alpha.3",
     "@babel/preset-env": "^7.1.0",
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
