@@ -4,5 +4,7 @@ decorator(x) -> x
 
 fieldDecorator(target, prop, desc) -> desc
 
-export @decorator class GoodbyeWorld:
+@decorator class GoodbyeWorld:
   @fieldDecorator decorated(x) -> x
+
+export { GoodbyeWorld }
