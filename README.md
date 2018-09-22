@@ -4,8 +4,9 @@ A minimal skeleton for a LightScript application or library running in Node.
 
 # Features
 
-- `rollup`-powered build with `@oigroup/babel-preset-lightscript`
-- Linting with `@oigroup/lightscript-eslint`
+- Powered by Babel 7 and LightScript 4
+- `rollup`-powered build with `@lightscript` babel preset
+- Linting with `@lightscript/eslint-plugin`
 - Testing with Jest; tests can be written in LightScript.
 - Code coverage with source mapping
 - GitHub syntax highlighting in `.gitattributes`
@@ -18,7 +19,6 @@ While [Visual Studio Code](https://code.visualstudio.com/) is not required to us
 If you do use VSCode, installing the following extensions will greatly improve your experience:
 
 - [LightScript syntax](https://marketplace.visualstudio.com/items?itemName=lightscript.lsc)
-- [Babel ES2015+ syntax](https://marketplace.visualstudio.com/items?itemName=dzannotti.vscode-babel-coloring)
 - [ESLint live linting](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 We also include some default workplace settings that will live-lint your code as you type in VSCode.

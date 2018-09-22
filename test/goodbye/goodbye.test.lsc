@@ -1,0 +1,5 @@
+import { goodbye } from '../..'
+
+test! "testing goodbye()", ->
+  debugger
+  expect(goodbye!).toBe("goodbye")

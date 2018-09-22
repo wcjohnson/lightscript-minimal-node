@@ -1,7 +1,7 @@
 // Compile lsc to js
 // See babel-jest plugin for more details
 
-const babelCore = require('babel-core');
+const babelCore = require('@babel/core');
 
 module.exports = {
   process(src, path) {

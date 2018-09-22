@@ -6,20 +6,22 @@ var path = require('path');
 var srcPath = (path.resolve('./src')).replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
 var srcPathRegex = new RegExp(srcPath)
 
-// Disable module transform when building for rollup
-var babelRC = JSON.parse(fs.readFileSync('./.babelrc', { encoding: 'UTF-8'}))
+// Load babelrc
+var babelRC = JSON.parse(fs.readFileSync('./.babelrc', { encoding: 'UTF-8' }))
 babelRC.babelrc = false;
-babelRC.presets[0][1].env.modules = false
+babelRC.extensions = [".js", ".lsc"];
 
-// Add babel-external-helpers plugin, which helps rollup dedupe injected code
-babelRC.presets[0][1].additionalPlugins = babelRC.presets[0][1].additionalPlugins || [];
-babelRC.presets[0][1].additionalPlugins.push("babel-plugin-external-helpers");
+// Locate LSC preset
+var lscPreset = babelRC.presets.find(x => x[0] === "@lightscript")
+if (!lscPreset) {
+  throw new Error("Couldn't locate lightscript preset; aborting build")
+}
+var lscConfig = lscPreset[1]
 
 // Istanbul code coverage
-var coverage = false;
-if (process.env.COVERAGE === "true") coverage = true;
+var coverage = (process.env.COVERAGE === "true");
 if(coverage) {
-  babelRC.presets[0][1].additionalPlugins.push("babel-plugin-istanbul");
+  lscConfig.additionalPlugins.push("babel-plugin-istanbul");
 }
 
 // Attempt to determine if a module is external and should not be rolled into
@@ -38,21 +40,14 @@ function isExternal(modulePath) {
 }
 
 var getPlugins = () => [
-  resolve({
-    extensions: ['.js', '.lsc']
-  }),
+  resolve({ extensions: babelRC.extensions }),
   babel(babelRC)
 ]
 
 var withFormat = (format) => ({
-  input: 'src/index.lsc',
-  output: {
-    file: format === "cjs" ? `lib/index.js` : `lib/index.${format}.js`,
-    format: format,
-    sourcemap: 'inline'
-  },
-  plugins: getPlugins(),
-  external: isExternal
+  file: format === "cjs" ? `lib/index.js` : `lib/index.${format}.js`,
+  format: format,
+  sourcemap: 'inline'
 })
 
 // Only build CJS when doing coverage
@@ -61,4 +56,9 @@ if (!coverage) {
   formats.push(withFormat("es"));
 }
 
-export default formats;
+export default {
+  input: 'src/index.lsc',
+  plugins: getPlugins(),
+  external: isExternal,
+  output: formats
+}

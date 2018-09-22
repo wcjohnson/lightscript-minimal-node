@@ -1,7 +1,7 @@
 {
   "presets": [
     [
-      "@oigroup/babel-preset-lightscript",
+      "@lightscript",
       {
         "env": {
           "targets": { "node": 8 }
