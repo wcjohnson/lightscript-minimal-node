@@ -21,6 +21,7 @@ var lscConfig = lscPreset[1]
 // Istanbul code coverage
 var coverage = (process.env.COVERAGE === "true");
 if(coverage) {
+  lscConfig.additionalPlugins = lscConfig.additionalPlugins || [];
   lscConfig.additionalPlugins.push("babel-plugin-istanbul");
 }
 
