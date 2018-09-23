@@ -2,6 +2,8 @@
 
 A minimal skeleton for a LightScript application or library running in Node.
 
+Issues: https://github.com/wcjohnson/lightscript/issues
+
 # Features
 
 - Powered by Babel 7 and LightScript 4
