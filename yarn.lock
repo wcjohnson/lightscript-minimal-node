@@ -691,9 +691,9 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@lightscript/babel-preset@4.0.0-alpha.8":
-  version "4.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@lightscript/babel-preset/-/babel-preset-4.0.0-alpha.8.tgz#8be34c5cb3a25f78b752b075e09ca68e822e7209"
+"@lightscript/babel-preset@4.0.0-alpha.9":
+  version "4.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@lightscript/babel-preset/-/babel-preset-4.0.0-alpha.9.tgz#82647fc5ae3a929f0beed20c8a761043217a88b0"
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "^7.1.0"
@@ -702,26 +702,26 @@
     "@babel/plugin-proposal-optional-chaining" "^7.0.0"
     "@babel/plugin-proposal-throw-expressions" "^7.0.0"
     "@babel/plugin-transform-flow-strip-types" "^7.0.0"
-    "@lightscript/transform" "4.0.0-alpha.8"
+    "@lightscript/transform" "4.0.0-alpha.9"
 
-"@lightscript/eslint-plugin@^4.0.0-alpha.8":
-  version "4.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@lightscript/eslint-plugin/-/eslint-plugin-4.0.0-alpha.8.tgz#039558580448280690f85492745eba67b3a4c1fb"
+"@lightscript/eslint-plugin@^4.0.0-alpha.9":
+  version "4.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@lightscript/eslint-plugin/-/eslint-plugin-4.0.0-alpha.9.tgz#175c347c36bf0d2ea400f934921336516309179e"
   dependencies:
     "@babel/code-frame" "^7.0.0"
     eslint-scope "^4.0.0"
     eslint-visitor-keys "^1.0.0"
 
-"@lightscript/parser@4.0.0-alpha.8":
-  version "4.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@lightscript/parser/-/parser-4.0.0-alpha.8.tgz#075c94a8eaccd55684af76f2b5d93b21e65f0086"
+"@lightscript/parser@4.0.0-alpha.9":
+  version "4.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@lightscript/parser/-/parser-4.0.0-alpha.9.tgz#8878ff1f31cae1e4790c4f3365f2f93414b3729a"
 
-"@lightscript/transform@4.0.0-alpha.8":
-  version "4.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/@lightscript/transform/-/transform-4.0.0-alpha.8.tgz#35d832089a68aca8700f9d276743c2607c5e2059"
+"@lightscript/transform@4.0.0-alpha.9":
+  version "4.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/@lightscript/transform/-/transform-4.0.0-alpha.9.tgz#e6a417b5f52ca0fdc51d628d27cd55508c6a5e34"
   dependencies:
     "@babel/types" "^7.0.0"
-    "@lightscript/parser" "4.0.0-alpha.8"
+    "@lightscript/parser" "4.0.0-alpha.9"
     "@oigroup/lightscript-runtime" "^0.1.1"
     ast-loc-utils "^1.1.0"
     find-babel-config "^1.1.0"
