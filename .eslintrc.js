@@ -1,4 +1,4 @@
-{
+module.exports = {
   "parser": "@lightscript/eslint-plugin",
   "plugins": ["@lightscript/eslint-plugin"],
   "extends": [
