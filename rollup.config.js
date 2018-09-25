@@ -7,7 +7,7 @@ var srcPath = (path.resolve('./src')).replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
 var srcPathRegex = new RegExp(srcPath)
 
 // Load babelrc
-var babelRC = JSON.parse(fs.readFileSync('./.babelrc', { encoding: 'UTF-8' }))
+var babelRC = require('./.babelrc.js')
 babelRC.babelrc = false;
 babelRC.extensions = [".js", ".lsc"];
 
