@@ -20,7 +20,7 @@
     "test": "run-s clean build test:only",
     "test:only": "jest",
     "test:only:coverage": "jest --coverage",
-    "test:debug": "node --inspect-brk $(npm bin)/jest -i --env jest-environment-node-debug",
+    "test:debug": "node --inspect-brk $(npm bin)/jest -i",
     "coverage": "run-s clean build:coverage test:only:coverage",
     "lint": "eslint --ext .js,.lsc src",
     "lint:fix": "eslint --fix --ext .js,.lsc src"
@@ -36,7 +36,6 @@
     "cross-env": "^5.1.4",
     "eslint": "^5.6.0",
     "jest": "^23.6.0",
-    "jest-environment-node-debug": "^2.0.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.66.2",
     "rollup-plugin-babel": "^4.0.3",
