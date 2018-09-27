@@ -1,6 +1,5 @@
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
-var fs = require('fs');
 var path = require('path');
 
 var srcPath = (path.resolve('./src')).replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')
