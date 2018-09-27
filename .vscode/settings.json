@@ -2,7 +2,10 @@
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    "lightscript"
+    {
+      "language": "lightscript",
+      "autoFix": true
+    }
   ],
   "debug.allowBreakpointsEverywhere": true
 }
