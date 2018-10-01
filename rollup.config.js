@@ -47,7 +47,7 @@ var getPlugins = () => [
 var withFormat = (format) => ({
   file: format === "cjs" ? `lib/index.js` : `lib/index.${format}.js`,
   format: format,
-  sourcemap: 'inline'
+  sourcemap: true
 })
 
 // Only build CJS when doing coverage
