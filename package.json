@@ -31,6 +31,8 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-plugin-istanbul": "^5.0.1",
     "cross-env": "^5.2.0",
     "eslint": "^5.6.1",
@@ -48,7 +50,7 @@
       "lsc"
     ],
     "transform": {
-      "\\.lsc$": "<rootDir>/scripts/lightscript.jest.js"
+      "\\.lsc$": "<rootDir>/node_modules/babel-jest"
     },
     "testRegex": "(\\.|/)test\\.lsc$",
     "coveragePathIgnorePatterns": [
