@@ -327,10 +327,10 @@
     "@babel/helper-replace-supers" "^7.1.0"
     "@babel/plugin-syntax-class-properties" "^7.0.0"
 
-"@babel/plugin-proposal-decorators@^7.1.0":
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.1.0.tgz#bb39ae934318e4560db2d724b0fca8da0299b120"
-  integrity sha512-/ljbdikH1lPjylMlvq9yQcrwFI9Z0zstHoihZ4/4BKuv+Fl9uQoY9E3wxv12wkQ9FPBg7JYNt7uRl3Kiz0Wnrw==
+"@babel/plugin-proposal-decorators@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.1.2.tgz#79829bd75fced6581ec6c7ab1930e8d738e892e7"
+  integrity sha512-YooynBO6PmBgHvAd0fl5e5Tq/a0pEC6RqF62ouafme8FzdIVH41Mz/u1dn8fFVm4jzEJ+g/MsOxouwybJPuP8Q==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/helper-replace-supers" "^7.1.0"
@@ -505,6 +505,13 @@
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.0.0.tgz#68e911e1935dda2f06b6ccbbf184ffb024e9d43a"
   integrity sha512-Fr2GtF8YJSXGTyFPakPFB4ODaEKGU04bPsAllAIabwoXdFrPxL0LVXQX5dQWoxOjjgozarJcC9eWGsj0fD6Zsg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+
+"@babel/plugin-transform-destructuring@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-destructuring/-/plugin-transform-destructuring-7.1.2.tgz#5fa77d473f5a0a3f5266ad7ce2e8c995a164d60a"
+  integrity sha512-cvToXvp/OsYxtEn57XJu9BvsGSEYjAh9UeUuXpoi7x6QHB7YdWyQ4lRU/q0Fu1IJNT0o0u4FQ1DMQBzJ8/8vZg==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
@@ -805,41 +812,42 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@lightscript/babel-preset@4.0.0-alpha.16":
-  version "4.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/@lightscript/babel-preset/-/babel-preset-4.0.0-alpha.16.tgz#0ab7add69c086606a1f7e410c907cc97304d733f"
-  integrity sha512-NiN9p5kEQnd43EY5n8JYqS5ZqAXTpe8UIcYxtm7BMLOeModNfYR7EJH6WEUvelRHT0fqiF9SF6koyDjTa2Lfzw==
+"@lightscript/babel-preset@4.0.0-alpha.22":
+  version "4.0.0-alpha.22"
+  resolved "https://registry.yarnpkg.com/@lightscript/babel-preset/-/babel-preset-4.0.0-alpha.22.tgz#be0cd8fae0e90c7e018ea55e7854426c04ffa1b1"
+  integrity sha512-BFdPKAonEGQGKlWtp/Vq+Ix0EjBJpP3GIthIx2l6ZkqNHI+sqHnwHLryCybesCrObXJ/QAvzI2YZDCbit+qIgg==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "^7.1.0"
-    "@babel/plugin-proposal-decorators" "^7.1.0"
+    "@babel/plugin-proposal-decorators" "^7.1.2"
     "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
     "@babel/plugin-proposal-optional-chaining" "^7.0.0"
     "@babel/plugin-proposal-throw-expressions" "^7.0.0"
+    "@babel/plugin-transform-destructuring" "^7.1.2"
     "@babel/plugin-transform-flow-strip-types" "^7.0.0"
-    "@lightscript/transform" "4.0.0-alpha.16"
+    "@lightscript/transform" "4.0.0-alpha.22"
 
-"@lightscript/eslint-plugin@^4.0.0-alpha.16":
-  version "4.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/@lightscript/eslint-plugin/-/eslint-plugin-4.0.0-alpha.16.tgz#43daed9217cc43e157b9194322d6a377ae1a81d1"
-  integrity sha512-O3lAP0vdkgEIVoiSgqAaq3djXNOE7WuaJxOpXFNW2S+djzafoQ4vZbqRkNuxDI+z/ltXFXJGibPZoi8rEin1LA==
+"@lightscript/eslint-plugin@^4.0.0-alpha.22":
+  version "4.0.0-alpha.22"
+  resolved "https://registry.yarnpkg.com/@lightscript/eslint-plugin/-/eslint-plugin-4.0.0-alpha.22.tgz#98bea60bb80616fb11e5d312faff00e1ff0e1607"
+  integrity sha512-zR7zaRcZS4DOT1Ppk1t/MWPZyiRR0/kLNqdqeT8FIIURjeFi1jyplSSQZpPFyVzmhchm9trSZgcIvPZt3tP+oA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     eslint-scope "^4.0.0"
     eslint-visitor-keys "^1.0.0"
 
-"@lightscript/parser@4.0.0-alpha.16":
-  version "4.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/@lightscript/parser/-/parser-4.0.0-alpha.16.tgz#3ad50d7bedff08995c6080185df4a0cbcbfc7614"
-  integrity sha512-iC/p41k9WHEYIEZmYmdS/RKe5tPr1to5+c8kv/AQ7DUNzR4S/92XpYH5jlhktoqApw19zu0YBFQDY8ycM7HgLQ==
+"@lightscript/parser@4.0.0-alpha.22":
+  version "4.0.0-alpha.22"
+  resolved "https://registry.yarnpkg.com/@lightscript/parser/-/parser-4.0.0-alpha.22.tgz#d776ed9b9f24cdf6480b215230c183ce5a29ee78"
+  integrity sha512-ygt37qimZbuBb7jhlDos7hohNHJRuRwUovVldzTrrY9L3B4bgqTiXeMQhkRb5xYKVk8+0lKKJeS2Bo35fQ8zmw==
 
-"@lightscript/transform@4.0.0-alpha.16":
-  version "4.0.0-alpha.16"
-  resolved "https://registry.yarnpkg.com/@lightscript/transform/-/transform-4.0.0-alpha.16.tgz#0ba83c2acc0b6c0684a6f06acd9ea07495a839e6"
-  integrity sha512-V+UfML5C3nCqsceDYPGVbFONzrDFYlZLMw4oer3PjIaAsEXwjubXR6fWvQiU5K+urn0nfnhu+NZOpu8R6IMIAQ==
+"@lightscript/transform@4.0.0-alpha.22":
+  version "4.0.0-alpha.22"
+  resolved "https://registry.yarnpkg.com/@lightscript/transform/-/transform-4.0.0-alpha.22.tgz#d0b8fc8857d175b0e632ea5262cf7a50254ae915"
+  integrity sha512-5yeoOqI//uVgroNsaMmItfrPsgyLDEzVRfIDhEEacJ5cF3SRzr70UC5XkFORGs+xfB3WJIkmK0QJeSQgPF22Kg==
   dependencies:
     "@babel/types" "^7.0.0"
-    "@lightscript/parser" "4.0.0-alpha.16"
+    "@lightscript/parser" "4.0.0-alpha.22"
     "@oigroup/lightscript-runtime" "^0.1.1"
     ast-loc-utils "^1.1.0"
     find-babel-config "^1.1.0"
@@ -4992,10 +5000,10 @@ rollup-pluginutils@^2.3.0:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@^0.66.2:
-  version "0.66.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.66.2.tgz#77acdb9f4093f5f035ce75480577c40a81ea7999"
-  integrity sha512-+rOLjWO170M3Y2jyyGU4ZJuTu1T1KuKNyH+RszHRzQdsuI5TulRbkSM4vlaMnwcxHm4XdgBNZ1mmNzhQIImbiQ==
+rollup@^0.66.6:
+  version "0.66.6"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.66.6.tgz#ce7d6185beb7acea644ce220c25e71ae03275482"
+  integrity sha512-J7/SWanrcb83vfIHqa8+aVVGzy457GcjA6GVZEnD0x2u4OnOd0Q1pCrEoNe8yLwM6z6LZP02zBT2uW0yh5TqOw==
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "*"
