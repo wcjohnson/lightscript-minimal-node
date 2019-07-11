@@ -44,21 +44,25 @@ var getPlugins = () => [
   babel(babelRC)
 ]
 
-var withFormat = (format) => ({
-  file: format === "cjs" ? `lib/index.js` : `lib/index.${format}.js`,
+var formatForTarget = (target, format) => ({
+  file: format === "cjs" ? `lib/${target}.js` : `lib/${target}.${format}.js`,
   format: format,
   sourcemap: true
 })
 
-// Only build CJS when doing coverage
-var formats = [withFormat("cjs")];
-if (!coverage) {
-  formats.push(withFormat("es"));
+function formatsForTarget(target) {
+  var formats = [formatForTarget(target, "cjs")];
+  if (!coverage) { formats.push(formatForTarget(target, "es")) }
+  return formats;
 }
 
-export default {
-  input: 'src/index.lsc',
+var configForTarget = (target) => ({
+  input: `src/${target}.lsc`,
   plugins: getPlugins(),
   external: isExternal,
-  output: formats
-}
+  output: formatsForTarget(target)
+})
+
+export default [
+  configForTarget('index'),
+]
