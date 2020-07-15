@@ -6,6 +6,9 @@ decorator(x) -> x
 fieldDecorator(target, prop, desc) -> desc
 
 @decorator class HelloWorld:
+  constructor() ->
+    this.message = "hello"
+
   @fieldDecorator decorated(x) -> x
 
 export { HelloWorld }

@@ -4,7 +4,7 @@ module.exports = {
       "@lightscript",
       {
         "env": {
-          "targets": { "node": 8 }
+          "targets": { "node": 10 }
         }
       }
     ]

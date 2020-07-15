@@ -5,11 +5,10 @@ module.exports = {
     "lsc"
   ],
   "transform": {
-    "\\.lsc$": "<rootDir>/node_modules/babel-jest"
+    "\\.lsc$": ["babel-jest", { "rootMode": "upward" }]
   },
   "testRegex": "(\\.|/)test\\.lsc$",
   "coveragePathIgnorePatterns": [
-    "/node_modules/",
-    "/lib/"
+    "/node_modules/"
   ]
 }
