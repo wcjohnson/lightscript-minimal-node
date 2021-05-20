@@ -26,25 +26,25 @@
     "lint:fix": "eslint --fix --ext .js,.lsc src"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.4"
+    "@babel/runtime": "^7.14.0"
   },
   "devDependencies": {
-    "@lightscript/babel-preset": "^4.0.0-alpha.30",
-    "@lightscript/eslint-plugin": "^4.0.0-alpha.30",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/cli": "^7.10.4",
-    "@babel/core": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.10.4",
-    "babel-jest": "^26.1.0",
-    "jest": "^26.1.0",
+    "@lightscript/babel-preset": "^4.0.0-alpha.36",
+    "@lightscript/eslint-plugin": "^4.0.0-alpha.36",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/core": "^7.14.3",
+    "@babel/cli": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
     "babel-plugin-istanbul": "^6.0.0",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "eslint": "^5.16.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.21.0",
-    "@rollup/plugin-babel": "^5.1.0",
+    "rollup": "^2.48.0",
+    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "8.4.0",
     "npm-run-all": "^4.1.5",
-    "find-parent-dir": "^0.3.0"
+    "find-parent-dir": "^0.3.1"
   }
 }

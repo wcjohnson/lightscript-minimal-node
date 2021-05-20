@@ -18,10 +18,7 @@ export default function createConfig(opts) {
   const babelRC = JSON.parse(JSON.stringify(require(babelRCDir + '/babel.config.js')))
   babelRC.babelrc = false;
   babelRC.extensions = extensions;
-  // XXX: disable TLA until lsc parser supports it
-  babelRC.caller = {
-    supportsTopLevelAwait: false
-  }
+
 
   // Locate LSC preset
   var lscPreset = babelRC.presets.find(x => x[0] === "@lightscript")
